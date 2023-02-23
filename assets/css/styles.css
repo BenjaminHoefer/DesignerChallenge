@@ -1,0 +1,7 @@
+/* Import of block-css files */
+
+@import url(../css/common.blocks/page.css);
+@import url(../css/common.blocks/header.css);
+@import url(../css/common.blocks/icon.css);
+@import url(../css/common.blocks/logo.css);
+@import url(../css/common.blocks/welcome.css);

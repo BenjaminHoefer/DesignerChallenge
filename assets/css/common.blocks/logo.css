@@ -1,0 +1,18 @@
+/* Styling of the logo */
+
+.logo {
+    width: 20vw;
+}
+
+.logo__name {
+    display: inline-block;
+    width: 15vw;
+}
+
+.logo__headline {
+    margin: 0;
+}
+
+.logo__text {
+    margin: 0;
+}

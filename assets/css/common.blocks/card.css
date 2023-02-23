@@ -1,0 +1,20 @@
+/* Styling of the cards inside the flex-container */
+
+.card {
+    width: 40%;
+    max-width: 700px;
+}
+
+.card__icon {
+    margin-right: 2.5vw;
+
+}
+
+.card__headline {
+    
+}
+
+.card__text {
+    line-height: 2;
+    font-size: 1.15rem;
+}

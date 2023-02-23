@@ -1,0 +1,16 @@
+/* General layout of main */
+
+.main__intro {
+    padding-top: 15vh;
+}
+
+.main__headline {
+    font-size: 4rem;
+    width: 60%;
+    max-width: 800px;
+    margin-left: 10vw;
+}
+
+.main__card-container {
+    margin-top: 15vh;
+}

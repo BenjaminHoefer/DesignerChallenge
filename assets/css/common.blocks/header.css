@@ -1,13 +1,21 @@
-/* Styling of the header */
+/*======================
+ Styling of the header 
+====================== */
 
 .header {
     background-image: url(../../img/ilustracion_people.png), url(../../img/ilustracion1.png);
-    background-position: right top;
-    background-size: 60vw 60vh;
+    background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .header__logo {
     padding-top: 1vh;
     padding-left: 0.5vw;
+}
+
+.header__welcome {
+    display: inline-block;
+    margin-top: 20vh;
+    margin-left: 5vw;
 }

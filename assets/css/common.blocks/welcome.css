@@ -1,3 +1,29 @@
+/* Styling of the welcome text */
+
 .welcome {
-    
+    width: 40vw;
+    height: 30vh;
+}
+
+.welcome__headline {
+    font-size: 3.75rem;
+    max-width: 500px;
+}
+
+.welcome__text {
+    font-size: 1.25rem;
+    font-family: "roboto-light", Arial, Helvetica, sans-serif;
+    max-width: 500px;
+}
+
+.welcome__icon {
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.welcome__text--red {
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;
+    color: #ff3571;
+    margin-top: 6vh;
 }

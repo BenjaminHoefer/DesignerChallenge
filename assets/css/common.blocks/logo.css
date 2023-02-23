@@ -11,8 +11,10 @@
 
 .logo__headline {
     margin: 0;
+    font-size: 1.5rem;
 }
 
 .logo__text {
     margin: 0;
+    font-size: 0.75rem;
 }

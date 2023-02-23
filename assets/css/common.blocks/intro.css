@@ -1,0 +1,18 @@
+.intro {
+    display: flex;
+    height: 35vh;
+    justify-content: space-evenly;
+}
+
+.intro__headline {
+    font-size: 2.75rem;
+    width: 20%;
+    max-width: 350px;
+}
+
+.intro__text {
+    font-size: 1rem;
+    line-height: 2;
+    width: 40%;
+    max-width: 500px;
+}

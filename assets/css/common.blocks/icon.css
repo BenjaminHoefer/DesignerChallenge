@@ -1,11 +1,7 @@
-/* Styling of every icon */
+/* Syling of the icons */
 
 .icon {
     width: 10vw;
     min-width: 25px;
     max-width: 50px;
-    height: 10vh;
-    min-height: 25px;
-    max-height: 50px
 }
-

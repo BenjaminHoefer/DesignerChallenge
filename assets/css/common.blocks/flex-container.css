@@ -1,0 +1,11 @@
+/* Layout od flex-container in main */
+
+.flex-container {
+    display:flex;
+    justify-content: space-evenly ;
+}
+
+.flex-container__card {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -107,13 +107,13 @@
                 <img class="bigger-card__img" src="./assets/img/step04.png" alt="Three sketchy looking persons around a board">
             </div>
         </section>
-        <section class="newsletter">
+        <form class="newsletter" onsubmit="return false">
             <h2 class="newsletter__headline headline">Do you like this challenge?</h2>
-            <p class="newsletter__text text">Subscribe to be the first to hear about updates, tips and recommendations!</p>
+            <p id="text" class="newsletter__text text">Subscribe to be the first to hear about updates, tips and recommendations!</p>
             <label for="email" class="newsletter__label">Email-Address:</label>
                 <input id="email" class="newsletter__input" type="email" placeholder="Write your email here">
-            <button class="newsletter__btn btn">Subscribe</button>
-        </section>
+            <button class="newsletter__btn btn" onclick="emailConfirmation()">Subscribe</button>
+        </form>
     </main>
     <footer class="footer page__footer">
         <p class="footer__text text">Created with love by a Webdesigner.</p><img class="footer__icon icon" src="./assets/img/love.png" alt="A small red heart">

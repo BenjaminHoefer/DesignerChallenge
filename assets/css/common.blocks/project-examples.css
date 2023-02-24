@@ -1,4 +1,7 @@
+/* Styling of example-pictures */
+
 .project-examples__img {
-    width: 100vw;
-    background-size: cover;
+    width: 100%;
+    background-size: contain;
+    margin-top: 20vh;
 }

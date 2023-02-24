@@ -1,0 +1,10 @@
+/* Styling of the footer */
+
+.footer__text {
+    display: inline-block;
+}
+
+.footer__icon {
+    width: 2%;
+    height: calc(36 / 42 * 100%);
+}

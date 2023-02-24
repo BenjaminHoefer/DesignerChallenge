@@ -12,5 +12,23 @@
 }
 
 .main__card-container {
+    margin-top: 7.5vh;
+}
+
+.main__headline--center {
+    margin: auto;
+    font-size: 3.5rem;
+    text-align: center;
     margin-top: 15vh;
 }
+
+.main__text {
+    font-size: 1.5rem;
+    width: 70%;
+    max-width: 700px;
+    line-height: 1.75;
+    margin-top: 5vh;
+    margin-bottom: 15vh;
+    text-align: center;
+}
+

@@ -1,0 +1,30 @@
+/* Styling of bigger card (was necessary due to poor application of BEM in html-structure)  */
+
+.bigger-card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bigger-card__img {
+    width: 40%;
+    height: calc(1212 / 1360 * 100%);
+    margin-bottom: 10vh;
+}
+
+.bigger-card__counter {
+    color: #dddddd;
+    font-size: 4.5rem;
+    font-family: "roboto-bold",Arial, Helvetica, sans-serif;
+}
+
+.bigger-card__article {
+    width: 40%;
+    max-width: 700px;
+}
+
+.bigger-card__text {
+    font-size: 1.25rem;
+    line-height: 1.75;
+    padding-bottom: 15vh;
+    max-width: 700px;
+}

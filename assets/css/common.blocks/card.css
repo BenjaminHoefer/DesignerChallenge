@@ -11,10 +11,11 @@
 }
 
 .card__headline {
-    
+    padding-top: 7.5vh;
 }
 
 .card__text {
     line-height: 2;
     font-size: 1.15rem;
 }
+

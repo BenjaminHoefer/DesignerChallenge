@@ -39,11 +39,23 @@ function emailConfirmation() {
     // const child = document.getElementsByClassName("newsletter")[0];
     // parent.replaceChild(newForm, child);
 
-document.getElementsByClassName("newsletter__headline")[0].textContent = "YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR YOUR SUBSCRIPTION!";
-document.getElementsByClassName("newsletter__headline")[0].style.fontSize = 3 + "rem";
-document.getElementsByClassName("newsletter__text")[0].textContent = "Your email-address has been added to our newsletter. If you don't want to receive our emails anymore just click on unsubscribe in one of our newsletter emails.";
-document.getElementsByClassName("newsletter__text")[0].style.fontSize = 1.5 + "rem";
-document.getElementsByClassName("newsletter__text")[0].style.fontSize = 1.5 + "rem";
+    /* Change content of headline and paragraph */
+    document.getElementsByClassName("newsletter__headline")[0].textContent = "YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR YOUR SUBSCRIPTION!";
+    document.getElementsByClassName("newsletter__headline")[0].style.fontSize = "3rem";
+    document.getElementsByClassName("newsletter__text")[0].textContent = "Your email-address has been added successfully to our newsletter.";
+    document.getElementsByClassName("newsletter__text")[0].style.fontSize = "1.5rem";
+
+    /* Remove label and associated email input element */
+    document.getElementsByClassName("newsletter__label")[0].remove();
+    document.getElementsByClassName("newsletter__input")[0].remove();
+
+    /* Add border to form element */
+    document.getElementsByClassName("newsletter")[0].style.border = "5px solid rgba(221, 221, 221, 0.25)";
+    document.getElementsByClassName("newsletter")[0].style.padding = "5%";
+
+    /* Change content and font-size of the button */
+    document.getElementsByClassName("newsletter__btn")[0].textContent = "Get back to the main page";
+    document.getElementsByClassName("newsletter__btn")[0].style.fontSize = "1rem";
 }
 
 

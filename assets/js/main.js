@@ -43,6 +43,7 @@ document.getElementsByClassName("newsletter__headline")[0].textContent = "YOUR E
 document.getElementsByClassName("newsletter__headline")[0].style.fontSize = 3 + "rem";
 document.getElementsByClassName("newsletter__text")[0].textContent = "Your email-address has been added to our newsletter. If you don't want to receive our emails anymore just click on unsubscribe in one of our newsletter emails.";
 document.getElementsByClassName("newsletter__text")[0].style.fontSize = 1.5 + "rem";
+document.getElementsByClassName("newsletter__text")[0].style.fontSize = 1.5 + "rem";
 }
 
 

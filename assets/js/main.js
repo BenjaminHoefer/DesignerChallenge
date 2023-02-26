@@ -42,7 +42,7 @@ function emailConfirmation() {
     /* Change content of headline and paragraph */
     document.getElementsByClassName("newsletter__headline")[0].textContent = "YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR YOUR SUBSCRIPTION!";
     document.getElementsByClassName("newsletter__headline")[0].style.fontSize = "3rem";
-    document.getElementsByClassName("newsletter__text")[0].textContent = "Your email-address has been added successfully to our newsletter.";
+    document.getElementsByClassName("newsletter__text")[0].textContent = "Your email-address has been successfully added to our newsletter.";
     document.getElementsByClassName("newsletter__text")[0].style.fontSize = "1.5rem";
 
     /* Remove label and associated email input element */
@@ -54,8 +54,6 @@ function emailConfirmation() {
     document.getElementsByClassName("newsletter")[0].style.padding = "5%";
 
     /* Change content and font-size of the button */
-    document.getElementsByClassName("newsletter__btn")[0].textContent = "Get back to the main page";
+    document.getElementsByClassName("newsletter__btn")[0].textContent = "Get back";
     document.getElementsByClassName("newsletter__btn")[0].style.fontSize = "1rem";
 }
-
-

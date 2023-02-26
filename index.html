@@ -107,12 +107,12 @@
                 <img class="bigger-card__img" src="./assets/img/step04.png" alt="Three sketchy looking persons around a board">
             </div>
         </section>
-        <form class="newsletter" onsubmit="return false">
+        <form class="newsletter" action="" onsubmit="emailConfirmation(); return false">
             <h2 class="newsletter__headline headline">Do you like this challenge?</h2>
             <p id="text" class="newsletter__text text">Subscribe to be the first to hear about updates, tips and recommendations!</p>
             <label for="email" class="newsletter__label">Email-Address:</label>
                 <input id="email" class="newsletter__input" type="email" placeholder="Write your email here" required>
-            <button class="newsletter__btn btn" onclick="emailConfirmation()" name="submit-email">Subscribe</button>
+            <button class="newsletter__btn btn" name="submit-email">Subscribe</button>
         </form>
     </main>
     <footer class="footer page__footer">

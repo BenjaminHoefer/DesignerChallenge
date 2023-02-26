@@ -68,3 +68,20 @@ width: 1px;
     background: rgb(255,53,113);
     background: linear-gradient(90deg, rgba(255,53,113,1) 0%, rgba(60,48,255,1) 50%);;
 }
+
+/* New class fo using in the class list after submit the form */
+.newsletter--after-submit {
+    
+}
+
+.newsletter__headline--after-submit {
+
+}
+
+.newsletter__text--after-submit {
+    
+}
+
+.newsletter__btn--after-submit {
+    
+}

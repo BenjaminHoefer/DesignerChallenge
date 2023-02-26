@@ -1,4 +1,4 @@
-function emailConfirmation() {
+function emailConfirmation(event) {
 
     // /* Create a document fragment */
     // const docFRag = document.createDocumentFragment();
@@ -39,6 +39,15 @@ function emailConfirmation() {
     // const child = document.getElementsByClassName("newsletter")[0];
     // parent.replaceChild(newForm, child);
 
+    /* Prevent the onsubmit-event to refresh the page which is set up by default by using the event parameter */
+    event.preventDefault();
+
+    /* Remove the attribute "onsubmit" from the form element to prevent to fire the event again after clicking the button again */
+    document.getElementsByClassName("newsletter")[0].removeAttribute("onsubmit");
+
+    /* Add the attribute "onclick" to the button to fire the function "getBack" after clicking */
+    document.getElementsByClassName("newsletter__btn")[0].setAttribute("onclick", "getBack(event)");
+
     /* Change content of headline and paragraph */
     document.getElementsByClassName("newsletter__headline")[0].textContent = "YOUR EMAIL HAS BEEN CONFIRMED. THANKS FOR YOUR SUBSCRIPTION!";
     document.getElementsByClassName("newsletter__headline")[0].style.fontSize = "3rem";
@@ -57,3 +66,25 @@ function emailConfirmation() {
     document.getElementsByClassName("newsletter__btn")[0].textContent = "Get back";
     document.getElementsByClassName("newsletter__btn")[0].style.fontSize = "1rem";
 }
+
+function getBack(event) {
+
+
+    /* Prevent the onsubmit-event to refresh the page which is set up by default by using the event parameter */
+    event.preventDefault();
+
+    document.getElementsByClassName("newsletter")[0].setAttribute("onsubmit", "emailConfirmation()");
+
+    /* Add the attribute "onclick" to the button to fire the function "getBack" after clicking */
+    document.getElementsByClassName("newsletter__btn")[0].removeAttribute("onclick");
+
+    /* Change content of headline and paragraph */
+    document.getElementsByClassName("newsletter__headline")[0].textContent = "Do you like this challenge?";
+    document.getElementsByClassName("newsletter__text")[0].textContent = "Subscribe to be the first to hear about updates, tips and recommendations!";
+
+    /* Change content and font-size of the button */
+    document.getElementsByClassName("newsletter__btn")[0].textContent = "Subscribe";
+
+
+}
+

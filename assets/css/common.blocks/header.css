@@ -4,8 +4,8 @@
 
 .header {
     background-image: url(../../img/ilustracion_people.png), url(../../img/ilustracion1.png);
-    background-position: right;
-    background-size: contain;
+    background-position: right top;
+    background-size: clamp(100px, 70%, 750px);
     background-repeat: no-repeat;
 }
 
@@ -18,4 +18,21 @@
     display: inline-block;
     margin-top: 20vh;
     margin-left: 5vw;
+}
+
+/* Extra small devices like phones */
+@media only screen and (max-width:600px) {
+    .headline--one {
+        font-size: 2rem;
+    }
+}
+
+/* Medium devices like tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Large devices like laptops */
+@media only screen and (max-width: 992px) {
+
 }

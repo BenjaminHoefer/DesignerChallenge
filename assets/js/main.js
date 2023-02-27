@@ -69,22 +69,46 @@ function emailConfirmation(event) {
 
 function getBack(event) {
 
-
     /* Prevent the onsubmit-event to refresh the page which is set up by default by using the event parameter */
     event.preventDefault();
 
-    document.getElementsByClassName("newsletter")[0].setAttribute("onsubmit", "emailConfirmation()");
+    document.getElementsByClassName("newsletter")[0].setAttribute("onsubmit", "emailConfirmation(event)");
 
     /* Add the attribute "onclick" to the button to fire the function "getBack" after clicking */
     document.getElementsByClassName("newsletter__btn")[0].removeAttribute("onclick");
+
+    /* Remove styling again */
+
+    document.getElementsByClassName("newsletter")[0].style.border = "none";
 
     /* Change content of headline and paragraph */
     document.getElementsByClassName("newsletter__headline")[0].textContent = "Do you like this challenge?";
     document.getElementsByClassName("newsletter__text")[0].textContent = "Subscribe to be the first to hear about updates, tips and recommendations!";
 
+    /* Create label and email input element again */
+    const parentForm = document.getElementsByClassName("newsletter")[0];
+
+    const inputEmail = document.createElement("input");
+    inputEmail.setAttribute("id", "email");
+    inputEmail.setAttribute("class", "newsletter__input");
+    inputEmail.setAttribute("type", "email");
+    inputEmail.setAttribute("placeholder", "Write your email here");
+    inputEmail.setAttribute("required", "true");
+    inputEmail.classList.add("newsletter__input");
+
+    /* Insert the new email input element before the existing button element inside the form parent container */
+    const existingElement = document.getElementsByClassName("newsletter__btn")[0];
+    parentForm.insertBefore(inputEmail, existingElement);
+
+    const labelEmail = document.createElement("label");
+    labelEmail.setAttribute("for", "email");
+    labelEmail.setAttribute("class", "newsletter__label");
+    labelEmail.classList.add("newsletter__label");
+
+    /* Insert the new label element before the new created input email element */
+    parentForm.insertBefore(labelEmail, inputEmail);
+
     /* Change content and font-size of the button */
     document.getElementsByClassName("newsletter__btn")[0].textContent = "Subscribe";
-
-
 }
 
